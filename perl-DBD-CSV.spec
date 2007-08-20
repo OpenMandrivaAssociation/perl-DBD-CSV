@@ -13,7 +13,7 @@ URL:		http://search.cpan.org/dist/%{realname}
 Source:		http://search.cpan.org/CPAN/authors/id/J/JZ/JZUCKER/%{realname}-%{version}.tar.bz2
 Buildroot:	%{_tmppath}/%{name}-buildroot
 Buildrequires:	perl-devel perl-DBI
-BuildPreReq:	perl-Text-CSV_XS >= 0.16, perl-SQL-Statement >= 0.1011
+BuildRequires:	perl-Text-CSV_XS >= 0.16, perl-SQL-Statement >= 0.1011
 Buildarch:	noarch
 
 
