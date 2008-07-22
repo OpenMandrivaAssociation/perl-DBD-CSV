@@ -1,7 +1,7 @@
 %define	realname    DBD-CSV
 %define	name	    perl-%{realname}
 %define	version	    0.22
-%define	release	    %mkrel 2
+%define	release	    %mkrel 4
 
 Name:		%{name}
 Summary:	Perl module to access CSV files through DBI
