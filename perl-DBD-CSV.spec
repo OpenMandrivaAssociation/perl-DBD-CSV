@@ -1,5 +1,5 @@
 %define	upstream_name    DBD-CSV
-%define upstream_version 0.22
+%define upstream_version 0.25
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -9,7 +9,7 @@ Summary:	Perl module to access CSV files through DBI
 License:	GPL
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://search.cpan.org/CPAN/authors/id/J/JZ/JZUCKER/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://search.cpan.org/CPAN/authors/id/J/JZ/JZUCKER/%{upstream_name}-%{upstream_version}.tgz
 
 Buildrequires:	perl-DBI
 BuildRequires:	perl-Text-CSV_XS >= 0.16
