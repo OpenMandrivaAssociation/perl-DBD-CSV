@@ -1,6 +1,8 @@
 %define	upstream_name    DBD-CSV
 %define upstream_version 0.25
 
+%define _requires_exceptions /pro/bin/perl
+
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
 Release:    %mkrel 1
@@ -11,9 +13,10 @@ Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://search.cpan.org/CPAN/authors/id/J/JZ/JZUCKER/%{upstream_name}-%{upstream_version}.tgz
 
-Buildrequires:	perl-DBI
-BuildRequires:	perl-Text-CSV_XS >= 0.16
-BuildRequires:  perl-SQL-Statement >= 0.1011
+Buildrequires:	perl(DBI)
+BuildRequires:  perl(SQL::Statement) >= 0.1011
+BuildRequires:	perl(Text::CSV_XS) >= 0.16
+
 Buildarch:	noarch
 Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}
 
@@ -29,8 +32,10 @@ mostly used for exporting MS Access and MS Excel data.
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
-make
-make test
+%make
+
+%check
+%make test
 
 %install
 rm -rf $RPM_BUILD_ROOT
