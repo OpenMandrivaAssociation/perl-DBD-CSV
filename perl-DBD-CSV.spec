@@ -1,11 +1,11 @@
 %define	upstream_name    DBD-CSV
-%define upstream_version 0.25
+%define upstream_version 0.26
 
 %define _requires_exceptions /pro/bin/perl
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:	Perl module to access CSV files through DBI
 License:	GPL
