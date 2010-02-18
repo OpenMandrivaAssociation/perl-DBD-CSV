@@ -1,5 +1,5 @@
 %define	upstream_name    DBD-CSV
-%define upstream_version 0.26
+%define upstream_version 0.27
 
 %define _requires_exceptions /pro/bin/perl
 
