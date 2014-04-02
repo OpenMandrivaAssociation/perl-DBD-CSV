@@ -1,5 +1,5 @@
 %define	upstream_name    DBD-CSV
-%define upstream_version 0.30
+%define upstream_version 0.41
 
 %if %{_use_internal_dependency_generator}
 %define __noautoreq '/pro/bin/perl'
