@@ -9,7 +9,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Release:	5
 
 Summary:	Perl module to access CSV files through DBI
 License:	GPL
