@@ -14,7 +14,7 @@ Release:	5
 Summary:	Perl module to access CSV files through DBI
 License:	GPL
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://search.cpan.org/CPAN/authors/id/J/JZ/JZUCKER/%{upstream_name}-%{upstream_version}.tgz
 
 BuildRequires:	perl-devel
