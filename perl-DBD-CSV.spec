@@ -17,6 +17,7 @@ Group:		Development/Perl
 Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://search.cpan.org/CPAN/authors/id/J/JZ/JZUCKER/%{upstream_name}-%{upstream_version}.tgz
 
+BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	perl(DBI)
 BuildRequires:	perl(SQL::Statement) >= 0.1011
