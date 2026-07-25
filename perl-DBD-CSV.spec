@@ -1,5 +1,5 @@
 %define	upstream_name    DBD-CSV
-%define upstream_version 0.41
+%define upstream_version 0.64
 
 %if %{_use_internal_dependency_generator}
 %define __noautoreq '/pro/bin/perl'
@@ -8,14 +8,14 @@
 %endif
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Perl module to access CSV files through DBI
 License:	GPL
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://search.cpan.org/CPAN/authors/id/J/JZ/JZUCKER/%{upstream_name}-%{upstream_version}.tgz
+Url:		https://github.com/perl5-dbi/DBD-CSV
+Source0:	https://cpan.metacpan.org/authors/id/H/HM/HMBRAND/DBD-CSV-0.64.tgz-%{upstream_version}.tgz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
