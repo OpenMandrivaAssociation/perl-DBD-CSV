@@ -1,6 +1,4 @@
 %define	upstream_name    DBD-CSV
-%define upstream_version 0.64
-
 %if %{_use_internal_dependency_generator}
 %define __noautoreq '/pro/bin/perl'
 %else
@@ -8,14 +6,14 @@
 %endif
 
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	0.64
+Release:	2
 
 Summary:	Perl module to access CSV files through DBI
 License:	GPL
 Group:		Development/Perl
 Url:		https://github.com/perl5-dbi/DBD-CSV
-Source0:	https://cpan.metacpan.org/authors/id/H/HM/HMBRAND/DBD-CSV-0.64.tgz-%{upstream_version}.tgz
+Source0:	https://cpan.metacpan.org/authors/id/H/HM/HMBRAND/DBD-CSV-0.64.tgz-%{version}.tgz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -33,7 +31,7 @@ access to so-called CSV files (comma seperated values).  Such files are
 mostly used for exporting MS Access and MS Excel data.
 
 %prep 
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -88,9 +86,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Wed Jul 29 2009 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 0.220.0-1mdv2010.0
 + Revision: 403091
-- rebuild using %%perl_convert_version
-
-* Wed Jul 23 2008 Thierry Vignaud <tv@mandriva.org> 0.22-4mdv2009.0
+- rebuild using %0.64 Wed Jul 23 2008 Thierry Vignaud <tv@mandriva.org> 0.22-4mdv2009.0
 + Revision: 241202
 - rebuild
 - kill re-definition of %%buildroot on Pixel's request
